@@ -106,12 +106,14 @@ li #blog {
     float: right;
     padding-right: 2%;
 }
-#content{
+
+#content {
     background-color: #FABADA;
 }
+
 #musica {
     display: inline-block;
-    float: left;
+
     text-align: center;
     background: white;
     overflow: hidden;
@@ -135,7 +137,7 @@ li a:hover {
 
 h1 {
     text-transform: uppercase;
-    font-size: x-large ;
+    font-size: x-large;
 }
 
 #musica {
@@ -157,7 +159,8 @@ h1 {
 #ultimahora div {
     flex-basis: 46%;
 }
-#ultimahora #noticia7musica{
+
+#ultimahora #noticia7musica {
     flex-basis: 100%;
     margin-right: 4.2%;
 }
@@ -167,7 +170,7 @@ h1 {
     border-color: black;
     border-width: 1px;
     border-style: solid;
-    padding: 1%;
+    padding: 5%;
     box-sizing: border-box;
     min-height: 100vh;
     height: 100%;
@@ -194,12 +197,53 @@ main h1 {
     text-decoration-thickness: 3px;
     text-decoration-color: white;
     text-align: center;
-    
+
 }
 
 @media (max-width: 768px) {
-    
+
     #ultimahora div {
         flex-basis: 100%;
+    }
+}
+.menu-toggle {
+    display: none;
+}
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+        font-size: 24px;
+        background: none;
+        border: none;
+        cursor: pointer;
+        padding: 10px;
+        position: absolute;
+        top: 10px;
+
+    }
+
+    .menu-container.show ul {
+        display: block;
+        list-style-type: none;
+
+    }
+
+    .menu-container.show li {
+        display: inline;
+        padding: 14px 16px;
+        float: none;
+    }
+
+    .menu-container.show li a {
+        display: block;
+        padding: 14px 16px;
+    }
+
+    .menu-container ul {
+        display: none;
+    }
+
+    .menu-container.show {
+        display: block;
     }
 }
